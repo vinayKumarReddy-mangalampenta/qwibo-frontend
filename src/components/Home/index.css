@@ -1,0 +1,22 @@
+.home-container {
+    background-color: rgb(9, 71, 71);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    align-items: center;
+}
+
+.users-data-container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-filter-container {
+    width: 700px;
+    border: 2px solid red;
+}
