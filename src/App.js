@@ -4,6 +4,7 @@ import CustomerForm from "./components/CustomerForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./components/Home";
+import CustomerInfo from "./components/CustomerInfo/CustomerInfo";
 
 function App() {
 	return (
@@ -28,6 +29,11 @@ function App() {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/new" element={<CustomerForm />} />
+					<Route
+						exact
+						path="/customer/:customerId"
+						element={<CustomerInfo />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</div>
